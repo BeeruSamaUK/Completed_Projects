@@ -1,0 +1,344 @@
+
+/***************************************************************************
+                          START
+********************************************************************************/
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+
+
+  {
+    background: linear-gradient(#2b5876, #4e4376);
+   height: 1000px;
+   margin: 0;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+  }
+
+body {
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 700;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  
+  box-sizing: border-box;
+  overflow-x: hidden;
+  }
+
+
+  #company-values {
+    margin-top: 10rem;
+  }
+  .worker{
+background-image: url(../img/svg/professions-and-jobs.svg);
+  }
+  .target {
+background-image: url(../img/svg/target.svg);
+  }
+  .tasks{
+background-image: url(../img/svg/checklist.svg);
+  }
+/****************************************************************************
+               HERO IMG  AND BUTTON
+*****************************************************************************/
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+  border-left: #444 3px solid;
+}
+.navbar {
+  height: 10rem;
+  background-image: url(../img/bg-red.jpg);
+  
+  
+}
+
+.carousel-item {
+  height: 60rem;
+}
+
+
+
+.carousel-image-1 {
+  background: url('../img/future.jpg');
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url('../img/future3.jpg');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('../img/future33.jpg');
+  background-size: cover;
+}
+   
+.cardthree {
+  margin-top: -16rem;
+}
+
+        .btn, .btn:link, .btn:visited {
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 1.5rem 4rem;
+          display: inline-block;
+          border-radius: 10rem;
+          transition: all .2s;
+          position: relative;
+          font-size: 1.6rem;
+          border: none;
+          cursor: pointer; }
+        
+        .btn:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.493); }
+          .btn:hover::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0; }
+        
+        .btn:active, .btn:focus {
+          outline: none;
+          transform: translateY(-1px);
+          box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2); }
+        
+        .btn--white {
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0); }
+          .btn--white::after {
+            background-color: rgb(255, 255, 255); }
+        
+      
+        
+        .btn::after {
+          content: "";
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          border-radius: 11rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: all .4s; }
+        
+        .btn--animated {
+          animation: moveInBottom .5s ease-out .75s;
+          animation-fill-mode: backwards; }
+        
+       /****************************************************************************
+                      HEADING
+       *******************************************************************************/
+
+      
+       #home-heading {
+        position: relative;
+        min-height: 200px;
+        background: url('../img/bg-red.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        text-align: center;
+        color: #fff;
+        margin-top: 6rem;
+      }
+      #home-heading2 {
+        position: relative;
+        min-height: 200px;
+        background: url('../img/bg-red.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        text-align: center;
+        color: #fff;
+        margin-top: 6rem;
+      }
+       
+        
+       /***********************************************************************************************************************************************************/
+       @media only screen and (max-width: 411px) {
+       
+
+          .carousel-item {
+            height: 40rem;
+          }
+          .navbar {
+            height: 7rem;
+          
+          }
+          .cardthree {
+            margin-top: 2.2rem;
+          }
+          .card-text  {
+            height:90px;
+          }
+      }
+
+      @media only screen and (max-width: 360px) {
+       
+
+          
+          .carousel-item {
+            height: 34rem !important;
+          }
+          .navbar {
+            height: 5rem;
+          
+          }
+          .cardthree {
+            margin-top: 2.2rem;
+          }
+          .card-text  {
+            height:90px;
+          }
+      }
+      @media only screen and (max-width: 320px) {
+       
+
+          
+        .carousel-item {
+          height: 30rem !important ;
+        }
+        .navbar {
+          height: 5rem;
+        
+        }
+        .cardthree {
+          margin-top: 2.2rem;
+        }
+        .card-text  {
+          height:90px;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+       
+
+          
+      .carousel-item {
+        height: 35rem !important;
+      }
+      .navbar {
+        height: 5rem;
+      
+      }
+      .cardthree {
+        margin-top: 3.3rem;
+      }
+      .card-text  {
+        height:90px;
+      }
+  }
+  @media only screen and (max-width: 414px) {
+       
+
+          
+    .carousel-item {
+      height: 40rem ;
+    }
+    .navbar {
+      height: 5rem;
+    
+    }
+    .cardthree {
+      margin-top: 3rem;
+    }
+    .card-text  {
+      height:90px;
+    }
+}
+@media only screen and (max-width: 768px) {
+       
+
+          
+  .carousel-item {
+    height: 40rem ;
+  }
+  .navbar {
+    height: 5rem;
+  
+  }
+  .cardthree {
+    margin-top: 3rem;
+  }
+  
+}
+
+@media only screen and (max-width: 1024px) {
+       
+
+          
+  .carousel-item {
+    height: 40rem ;
+  }
+  .navbar {
+    height: 5rem;
+  
+  }
+  .cardthree {
+    margin-top: 3rem;
+  }
+  
+}
+
+@media only screen and (max-width: 1199px) {
+       
+
+          
+  .carousel-item {
+    height: 40rem ;
+  }
+  .navbar {
+    height: 5rem;
+  
+  }
+  .cardthree {
+    margin-top: 3rem;
+  }
+  .card-text  {
+    height:90px;
+  }
+}
+
+@media only screen and (max-width: 741px) {
+       
+
+          
+  .carousel-item {
+    height: 40rem ;
+  }
+  .navbar {
+    height: 5rem;
+  
+  }
+  .cardthree {
+    margin-top: 3rem;
+    d
+  }
+  .card-text  {
+    height: 90px !important;
+    overflow: hidden;
+  }
+}
+
+
+#about-us {
+  margin-top: 6rem;
+}
+
+#about-us2 {
+  margin-top: 6rem;
+}
+
+
+
+
